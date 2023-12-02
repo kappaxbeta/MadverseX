@@ -1,5 +1,3 @@
-import { Hero } from 'components/hero'
-import { Layout } from 'layouts/default'
 import { Canvas } from 'libs/webgl/components/canvas'
 import s from './home.module.scss'
 import { Lenis } from '@studio-freight/react-lenis'
@@ -9,23 +7,21 @@ export default function Home() {
   return (
     <Canvas>
       <Lenis root>
-      <div className={s.page}>
-        <div className={s.layout}>
-          <main className={s.main}>
-            <section className={s.hero}>
-              <p className={s.header}>Madverse</p>
+        <div className={s.page}>
+          <div className={s.layout}>
+            <main className={s.main}>
+              <section className={s.hero}>
+                <p className={s.header}>Madverse</p>
 
-              <LabelStudio />
-            </section>
+                <LabelStudio />
+              </section>
 
-            <section className={s.hero} >
-              <p className={s.header}>Künstler</p>
-
-
-            </section>
-          </main>
+              <section className={s.hero}>
+                <p className={s.header}>Products</p>
+              </section>
+            </main>
+          </div>
         </div>
-      </div>
       </Lenis>
     </Canvas>
   )
@@ -34,7 +30,7 @@ export default function Home() {
 export async function getStaticProps() {
   return {
     props: {
-      id: 'home'
+      id: 'home',
     }, // will be passed to the page component as props
   }
 }
