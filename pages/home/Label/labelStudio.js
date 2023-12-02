@@ -1,14 +1,16 @@
 import s from './LabelStudio.module.scss'
 
-function LabelStudio (props) {
-  return <span>
-              <div>
-                  <h2 className={s.top}>Sugar</h2>
-               <h2>
-                <span>©</span> {new Date().getFullYear()} Studio
-              </h2>
-              </div>
-          </span>
+function LabelStudio() {
+  return (
+    <span>
+      <div>
+        <h2 className={s.top}>Sugar</h2>
+        <h2>
+          <span>©</span> {new Date().getFullYear()} Studio
+        </h2>
+      </div>
+    </span>
+  )
 }
 
 /*
