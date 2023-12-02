@@ -12,12 +12,11 @@ export default function Home() {
             <main className={s.main}>
               <section className={s.hero}>
                 <p className={s.header}>Madverse</p>
-
                 <LabelStudio />
               </section>
 
               <section className={s.hero}>
-                <p className={s.header}>Products</p>
+                <p className={s.header}>Products:</p>
               </section>
             </main>
           </div>
