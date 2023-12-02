@@ -1,4 +1,4 @@
-import s from './LabelStudio.module.scss'
+import s from './labelStudio.module.scss'
 
 function LabelStudio() {
   return (
