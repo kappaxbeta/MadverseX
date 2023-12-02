@@ -16,7 +16,7 @@ export default function Home() {
               </section>
 
               <section className={s.hero}>
-                <p className={s.header}>Products:</p>
+                <p className={s.header}>:Products:</p>
               </section>
             </main>
           </div>
